@@ -22,7 +22,7 @@ vainput.addEventListener('focus',()=>{
 check.addEventListener('click',(e)=>{
     e.stopPropagation
     var a =vainput.value
-    if(a === "10/10/2001")
+    if(a === "03/10/2003")
     {
         ques.classList.add('active')
         sucess.classList.add('active')
