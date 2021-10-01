@@ -38,7 +38,7 @@ check.addEventListener('click',(e)=>{
                 video1.play()
                 video.classList.remove('active')
                 containercard.classList.add('active')
-            },10000)
+            },39900)
              }
         )
         
