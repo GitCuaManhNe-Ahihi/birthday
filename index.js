@@ -7,16 +7,15 @@ var imghp = document.querySelector('.img-happy');
 var imgsad = document.querySelector('.img-sad');
 var video = document.querySelector('.video');
 var videoo = document.querySelector('#videoo');
-var video1 = document.querySelector('#video1');
-var video2= document.querySelector('#video2');
+var audio1= document.querySelector('#audio1');
 var question= document.querySelector('.question');
 var containercard = document.querySelector('.container-card')
 
 
 
 vainput.addEventListener('focus',()=>{
-   video2.play()
-   
+  
+    audio1.play()
   })
 
 check.addEventListener('click',(e)=>{
@@ -27,15 +26,17 @@ check.addEventListener('click',(e)=>{
         ques.classList.add('active')
         sucess.classList.add('active')
         sucess.addEventListener('click',(ev)=>{
-            video2.pause()
+          
             ev.stopPropagation
             question.classList.add('active')
             video.classList.add('active')
+            audio1.pause()
             videoo.play()
             
             setTimeout(()=>{
+                 
                 videoo.pause()
-                video1.play()
+                audio1.play()
                 video.classList.remove('active')
                 containercard.classList.add('active')
             },39900)
